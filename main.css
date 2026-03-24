@@ -264,6 +264,34 @@ p {
     width: 92px;
 }
 
+.folder-icon {
+    position: relative;
+    width: 92px;
+    height: 92px;
+}
+
+.folder-default,
+.folder-hover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: auto;
+}
+
+.folder-hover {
+    opacity: 0;
+}
+
+.folder-link:hover .folder-default,
+.folder-link:focus .folder-default {
+    opacity: 0;
+}
+
+.folder-link:hover .folder-hover,
+.folder-link:focus .folder-hover {
+    opacity: 1;
+}
+
 .folder-link span {
     font-family: "argent-pixel-cf", sans-serif;
     font-size: 0.9rem;
@@ -392,8 +420,10 @@ p {
         font-size: 0.82rem;
     }
 
-    .folder-link img {
+    .folder-link img,
+    .folder-icon {
         width: 82px;
+        height: 82px;
     }
 
     .folder-link span {
@@ -407,4 +437,3 @@ p {
         scroll-behavior: auto !important;
     }
 }
-
