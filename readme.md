@@ -8,3 +8,4 @@ This website is a retro inspired digital business card by Josh Daponte.
 - Added font family
 - Added a favicon
 - Added a custom cursor
+- Added background
