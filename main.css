@@ -407,3 +407,30 @@ p {
         scroll-behavior: auto !important;
     }
 }
+
+.folder-icon {
+    position: relative;
+    width: 92px;
+    height: 92px;
+}
+
+.folder-default,
+.folder-hover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+}
+
+.folder-hover {
+    opacity: 0;
+}
+
+.folder-link:hover .folder-default,
+.folder-link:focus .folder-default {
+    opacity: 0;
+}
+
+.folder-link:hover .folder-hover,
+.folder-link:focus .folder-hover {
+    opacity: 1;
+}
